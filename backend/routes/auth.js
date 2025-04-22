@@ -36,7 +36,7 @@ router.post("/login", (req, res, next) => {
   if (
     username === process.env.ADMIN_USERNAME &&
     password === process.env.ADMIN_PASSWORD &&
-    role === "doctor"
+    role === "admin"
   ) {
     const adminUser = {
       id: process.env.ADMIN_ID, // Taking ID from .env
